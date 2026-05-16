@@ -254,8 +254,6 @@ Pull requests are welcome. For major changes please open an issue first.
 
 **Amar9340**
 - GitHub: [@Amar9340](https://github.com/Amar9340)
-- Project: B.Tech CSE Final Year — Rayat Bahra University, Mohali
-- Supervisor: Dr. Pooja Sharma, HOD CSE
 
 ---
 
