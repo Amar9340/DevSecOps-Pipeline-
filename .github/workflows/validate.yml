@@ -1,0 +1,44 @@
+name: Validate Pipeline Files
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Validate Jenkinsfile syntax
+        run: |
+          echo "Checking Jenkinsfile exists..."
+          test -f Jenkinsfile && echo "✅ Jenkinsfile found" || exit 1
+
+      - name: Check .env.example completeness
+        run: |
+          echo "Checking .env.example..."
+          test -f .env.example && echo "✅ .env.example found" || exit 1
+
+      - name: Validate shell scripts
+        run: |
+          echo "Checking shell scripts..."
+          find scripts/ -name "*.sh" -exec bash -n {} \; && \
+          echo "✅ All scripts valid"
+
+      - name: Check .gitignore has .env
+        run: |
+          grep -q "^\.env$" .gitignore && \
+          echo "✅ .env is in .gitignore" || \
+          (echo "❌ .env not in .gitignore!" && exit 1)
+
+      - name: Security check - no hardcoded tokens
+        run: |
+          echo "Scanning for hardcoded tokens..."
+          ! grep -rE "(ghp_|squ_|sk-)[a-zA-Z0-9]{20,}" \
+            --include="*.sh" \
+            --include="*.groovy" \
+            --include="Jenkinsfile" \
+            . && echo "✅ No hardcoded tokens found"

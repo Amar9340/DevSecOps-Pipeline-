@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "timonwong.shellcheck",
+    "foxundermoon.shell-format",
+    "ms-azuretools.vscode-docker",
+    "janjoerke.jenkins-pipeline-linter-connector",
+    "eamodio.gitlens",
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+    "dotenv.dotenv-vscode",
+    "redhat.vscode-yaml",
+    "ms-vscode-remote.remote-ssh",
+    "gruntfuggly.todo-tree",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

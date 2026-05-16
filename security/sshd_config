@@ -1,0 +1,16 @@
+Port 2277
+PermitRootLogin no
+PasswordAuthentication yes
+PubkeyAuthentication yes
+MaxAuthTries 3
+MaxSessions 3
+PermitEmptyPasswords no
+X11Forwarding no
+ClientAliveInterval 300
+ClientAliveCountMax 2
+ChallengeResponseAuthentication no
+KerberosAuthentication no
+GSSAPIAuthentication no
+Banner none
+PrintMotd no
+PrintLastLog no
