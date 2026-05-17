@@ -251,9 +251,11 @@ Pull requests are welcome. For major changes please open an issue first.
 ---
 
 ## 👤 Author
-
+- Project : DevSecOps CI/CD Pipeline with Automated VAPT
 **Amar9340**
 - GitHub: [@Amar9340](https://github.com/Amar9340)
+Linkdin: https://www.linkedin.com/in/amar-deep-singh-414919267/
+Gmail: deepamar9340@gmail.com
 
 ---
 
