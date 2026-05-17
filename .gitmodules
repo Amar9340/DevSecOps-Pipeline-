@@ -1,0 +1,3 @@
+[submodule "dvwa-target"]
+	path = dvwa-target
+	url = https://github.com/Amar9340/DVWA
