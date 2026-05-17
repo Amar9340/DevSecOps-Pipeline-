@@ -98,7 +98,7 @@ Ubuntu 22.04 LTS VM
 
 ```bash
 # 1. Clone this repo
-git clone https://github.com/Amar9340/devsecops-pipeline.git
+git clone https://github.com/Amar9340/DevSecOps-pipeline.git
 cd devsecops-pipeline
 
 # 2. Edit configuration
